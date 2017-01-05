@@ -1,4 +1,4 @@
-(define (double n) (* n 2))
+(define (double n) (+ n n))
 (define (halve n) (/ n 2))
 
 (define (fast-multi a b) (fast-iter a b 0))
