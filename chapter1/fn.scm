@@ -2,13 +2,8 @@
 (define (f-R n)
   (cond ((< n 3) n)
   (else (+ (f-R (- n 1))
-           (* 2
-              (f-R (- n 2))
-              )
-           (* 3
-              (f-R (- n 3))
-              )
-           ))))
+           (* 2 (f-R (- n 2)))
+           (* 3 (f-R (- n 3)))))))
 
 ; iterative version.
 (define (f n) 
